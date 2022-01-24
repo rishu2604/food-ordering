@@ -1,0 +1,249 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root
+{
+    --navbar-height: 60px;
+}
+
+/* Navvigation Bar */
+#navbar
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+/* Psuedo Selectors */
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navbar: logo */
+#logo
+{
+    margin: 15px 20px;
+}
+
+#logo img
+{
+    margin: 20px 25px;
+    height: 25px;
+}
+
+/* Nabar: list items */
+#navbar ul
+{
+    display: flex;
+}
+
+#navbar ul li
+{
+    list-style: none;
+    font-size: larger;
+    font-family: cursive;
+}
+
+#navbar ul li a
+{
+    color: aliceblue;
+    display: block;
+    padding: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover
+{
+    color: black;
+    background: white;
+    font-size: x-large;
+}
+
+/* Home Section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#home::before
+{
+    content: "";
+    position: absolute;
+    background: url('food_bg1.jpg') no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1
+{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#home p
+{
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Utility Classes */
+.h-primary
+{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.h-secondary
+{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#btn
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 15px;
+    background-color: rgb(201, 59, 59);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#btn:hover
+{
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    border: 4px solid white;
+}
+
+.center
+{
+    text-align: center;
+}
+
+/* Services Section */
+.services-container
+{
+    margin: 100px;
+}
+#services
+{
+    display: flex;
+    padding: 5px 7px;
+}
+
+#services .box
+{
+    border: 3px solid brown;
+    margin: 10px;
+    padding: 25px 25px;
+    text-align: justify;
+    border-radius: 15px;
+    background-color: rgb(218, 218, 218);
+}
+
+#services .box img
+{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#clients img
+{
+    height: 130px;
+    padding: 50px;
+}
+
+#client-section::before
+{
+    content: "";
+    position: absolute;
+    background-image: url('food_bg.jpg');
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact
+{
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+
+#contact::before
+{
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+footer
+{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box label
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#contact-box input,
+#contact-box textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+#contact-box form
+{
+    width: 30%;
+}
